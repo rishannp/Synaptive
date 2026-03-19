@@ -11,9 +11,9 @@
   --text-muted:  #5C5C5C;
   --text-light:  #F9F7F4;
   --text-light2: rgba(249,247,244,0.65);
-  --accent:      #5B3FFF;
-  --accent-dim:  rgba(91,63,255,0.12);
-  --accent-glow: rgba(91,63,255,0.35);
+  --accent:      #cb8e7e;
+  --accent-dim:  rgba(203,142,126,0.12);
+  --accent-glow: rgba(203,142,126,0.35);
   --border:      rgba(13,13,13,0.10);
   --border-light:rgba(249,247,244,0.12);
 
@@ -55,7 +55,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   color: var(--accent);
   margin-bottom: 0.75rem;
 }
-.eyebrow-light { color: rgba(91,63,255,0.75); }
+.eyebrow-light { color: rgba(203,142,126,0.9); }
 
 /* ── Buttons ── */
 .btn {
@@ -74,7 +74,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   color: #fff;
 }
 .btn-primary:hover {
-  background: #4931e8;
+  background: #b8735e;
   transform: translateY(-1px);
   box-shadow: 0 8px 24px var(--accent-glow);
 }
@@ -187,7 +187,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   color: #fff;
   margin-left: 0.5rem;
 }
-.nav-links .nav-cta:hover { background: #4931e8; color: #fff; }
+.nav-links .nav-cta:hover { background: #b8735e; color: #fff; }
 
 .nav-toggle {
   display: none;
@@ -708,7 +708,7 @@ blockquote cite {
 
 .adopters-form-wrap {
   background: var(--bg-alt);
-  border: 1.5px solid rgba(91,63,255,0.2);
+  border: 1.5px solid rgba(203,142,126,0.2);
   border-radius: 16px;
   padding: 2rem;
 }
@@ -739,18 +739,18 @@ blockquote cite {
   margin-top: 0.5rem;
 }
 .btn-accent:hover {
-  background: #4931e8;
+  background: #b8735e;
   transform: translateY(-1px);
   box-shadow: 0 8px 24px var(--accent-glow);
 }
 
 .nav-adopters {
-  background: rgba(91,63,255,0.1) !important;
+  background: rgba(203,142,126,0.1) !important;
   color: var(--accent) !important;
   font-weight: 600 !important;
 }
 .nav-adopters:hover {
-  background: rgba(91,63,255,0.18) !important;
+  background: rgba(203,142,126,0.18) !important;
 }
 
 @media (max-width: 960px) {
@@ -784,7 +784,7 @@ blockquote cite {
   align-items: flex-start;
   gap: 1.5rem;
   background: var(--accent-dim);
-  border-color: rgba(91,63,255,0.2);
+  border-color: rgba(203,142,126,0.2);
 }
 .team-avatar {
   flex-shrink: 0;
