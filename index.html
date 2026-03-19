@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synaptive: Inclusive EEG Electrodes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo"><img src="logo.png" alt="Synaptive" class="logo-img" /></a>
+      <ul class="nav-links">
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#solution">Our Work</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#adopters" class="nav-adopters">Early Adopters</a></li>
+        <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Patent Pending</p>
+      <h1 class="hero-headline">
+        EEG was built for<br />
+        <em>one type of hair.</em><br />
+        We're fixing that.
+      </h1>
+      <p class="hero-sub">
+        Synaptive is developing a novel EEG electrode that achieves reliable scalp contact
+        across all hair types: afro-textured, curly, coily, straight, without modification
+        or extended setup. Because neuroscience should work for everyone.
+      </p>
+      <div class="hero-actions">
+        <a href="#problem" class="btn btn-primary">See the evidence</a>
+        <a href="#contact" class="btn btn-ghost">Partner with us</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-ring ring-1"></div>
+      <div class="hero-ring ring-2"></div>
+      <div class="hero-ring ring-3"></div>
+      <div class="hero-dot-grid"></div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="stat">
+        <span class="stat-number">74<span class="stat-unit">%</span></span>
+        <span class="stat-label">of EEG researchers report hardware challenges with curly or afro-textured hair</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">5<span class="stat-unit">/81</span></span>
+        <span class="stat-label">EEG papers reviewed included any Black participants; none confirmed data quality</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">90<span class="stat-unit">%</span></span>
+        <span class="stat-label">of researchers say a hardware solution would help their work</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">18<span class="stat-unit">mo</span></span>
+        <span class="stat-label">of iteration, prototyping, and testing to get here</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section" id="problem">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">The Problem</p>
+        <h2>This isn't a science problem.<br />It never was.</h2>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-text">
+          <p>
+            EEG electrode caps allow approximately one centimetre of space between
+            electrode and scalp. That works fine for straight, fine hair. For thick,
+            voluminous, curly, and coily hair (more common in people of African and
+            Caribbean heritage) it fails. Routinely. Systematically.
+          </p>
+          <p>
+            The consequences aren't technical abstractions. Labs list protective
+            hairstyles as exclusion criteria. Participants with kinky hair require
+            30–40 additional minutes of setup that still doesn't achieve full contact.
+            Some have had minor scalp abrasions from repeated electrode placement.
+            Many never come back for follow-up sessions.
+          </p>
+          <p>
+            The data that results: the datasets underpinning BCI algorithms, clinical
+            rehabilitation tools, and consumer neurotechnology. It reflects that exclusion.
+            Baked in from the first moment of data collection, and propagating
+            forward into every model trained on it.
+          </p>
+          <blockquote>
+            "Exclusion at the hardware stage does not remain isolated;
+            it propagates downstream and impacts all methods that use BCI datasets."
+            <cite>Synaptive, Graz BCI Conference submission</cite>
+          </blockquote>
+        </div>
+        <div class="problem-cards">
+          <div class="problem-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+              </svg>
+            </div>
+            <h3>Signal degradation</h3>
+            <p>High impedances and elevated noise from poor scalp contact, with standard gel remediation proving less effective for curly hair.</p>
+          </div>
+          <div class="problem-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3>Extended setup burden</h3>
+            <p>Substantially longer preparation times that still fail to achieve full electrode contact, increasing participant fatigue and drop-out.</p>
+          </div>
+          <div class="problem-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3>Explicit exclusion</h3>
+            <p>Labs listing braids, cornrows, and locs as exclusion criteria, effectively barring entire communities from contributing their data.</p>
+          </div>
+          <div class="problem-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Biased algorithms</h3>
+            <p>Machine learning models trained on unrepresentative data embed and amplify existing biases, performing worst for the populations most excluded from training.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="section section-dark" id="solution">
+    <div class="container">
+      <div class="section-header section-header-light">
+        <p class="eyebrow eyebrow-light">Our Work</p>
+        <h2>An electrode that works<br />for all hair types.</h2>
+      </div>
+      <div class="solution-layout">
+        <div class="solution-text">
+          <p>
+            Existing solutions, including pin-based and braided-anchor electrodes, represent
+            meaningful progress, but none achieve the full target: reliable scalp contact,
+            wet electrode impedance levels, no required hair modification, and minimal
+            setup time, for every hair type.
+          </p>
+          <p>
+            After eighteen months of iteration and three Cambridge entrepreneurship programmes,
+            Synaptive has developed a novel electrode design that meets those criteria. It is
+            novel enough that we are currently navigating the patent process.
+          </p>
+          <p>
+            We are not building a workaround. We are building the electrode that should
+            have existed from the beginning.
+          </p>
+        </div>
+        <div class="solution-pillars">
+          <div class="pillar">
+            <div class="pillar-number">01</div>
+            <div class="pillar-body"><h3>Universal contact</h3>
+            <p>Reliable scalp contact across straight, wavy, curly, coily, and afro-textured hair, without preparation or modification.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-number">02</div>
+            <div class="pillar-body"><h3>Wet electrode parity</h3>
+            <p>Signal quality at impedance levels equivalent to current clinical-grade wet electrode systems.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-number">03</div>
+            <div class="pillar-body"><h3>Minimal setup time</h3>
+            <p>No extended preparation. No additional gel protocol. No researcher specialist knowledge required for diverse hair types.</p></div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-number">04</div>
+            <div class="pillar-body"><h3>Research-grade output</h3>
+            <p>Designed to meet the requirements of academic research, clinical EEG, and consumer BCI applications.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <p class="eyebrow eyebrow-light" style="text-align:center; margin-bottom: 2rem;">Journey</p>
+        <div class="timeline-track">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Problem identified</h4>
+              <p>Systematic exclusion of afro-textured hair from EEG research documented through literature review and practitioner survey.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Team assembled</h4>
+              <p>Cross-disciplinary team formed spanning UCL, Imperial College London, and UNC Greensboro.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>Cambridge programmes</h4>
+              <p>Three Cambridge entrepreneurship and innovation programmes completed, developing technical and regulatory expertise alongside the engineering.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h4>White paper published</h4>
+              <p>Peer-reviewed research documenting the scale of EEG exclusion and the practitioner case for electrode redesign.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-content">
+              <h4>Patent pending</h4>
+              <p>Novel electrode design submitted for patent protection. Fundraising underway to support the IP process and next development stage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Research</p>
+        <h2>Built on evidence, not intuition.</h2>
+      </div>
+      <div class="research-layout">
+        <div class="paper-card">
+          <div class="paper-meta">
+            <span class="paper-tag">Conference Submission</span>
+            <span class="paper-tag">Graz BCI Conference</span>
+          </div>
+          <h3>Diversity in BCI: Why is it important?</h3>
+          <p class="paper-authors">
+            Merlin Angel Kelly, Peter Bryan, Rishan Patel, Lexi Kier et al.
+          </p>
+          <p class="paper-affiliations">
+            Aspire Create, University College London &bull; Department of Bioengineering, Imperial College London &bull; Department of Kinesiology, University of North Carolina at Greensboro
+          </p>
+          <p class="paper-abstract">
+            A mixed-methods survey of 31 EEG researchers and practitioners revealing that 74% reported
+            hardware-related challenges with diverse hair types. Qualitative analysis identified five
+            themes: signal degradation, extended setup burden, explicit participant exclusion, downstream
+            data loss, and a systemic researcher knowledge gap. The paper argues that electrode redesign
+            is a prerequisite for equitable BCI.
+          </p>
+          <div class="paper-findings">
+            <div class="finding">
+              <strong>74%</strong>
+              <span>of researchers reported hardware challenges with curly or afro-textured hair</span>
+            </div>
+            <div class="finding">
+              <strong>90%</strong>
+              <span>said a hardware solution would be helpful to their work</span>
+            </div>
+            <div class="finding">
+              <strong>5/81</strong>
+              <span>EEG papers reviewed included Black participants</span>
+            </div>
+          </div>
+        </div>
+        <div class="research-context">
+          <h3>Why this matters beyond the lab</h3>
+          <p>
+            BCI systems are moving from laboratory prototypes into clinical rehabilitation,
+            assistive communication, and consumer applications globally.
+          </p>
+          <p>
+            Machine learning models trained on data from predominantly one demographic
+            do not merely underperform for excluded groups; they embed and amplify
+            the original exclusion. As Synaptive's Graz BCI submission notes, AI models trained
+            on unrepresentative data will inherit and amplify existing biases.
+          </p>
+          <p>
+            Black and Hispanic individuals are, respectively, twice and 1.5 times as
+            likely to develop Alzheimer's disease. They exhibit distinct neural signatures
+            from white individuals. BCI diagnostic tools built without their data may
+            not only fail for these populations; they may actively mischaracterise
+            disease states in the communities bearing the greatest burden.
+          </p>
+          <p>
+            Fixing the electrode is not a peripheral concern. It is where inclusive
+            neuroscience begins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EARLY ADOPTERS -->
+  <section class="section section-adopters" id="adopters">
+    <div class="container">
+      <div class="adopters-layout">
+        <div class="adopters-text">
+          <p class="eyebrow">Early Adopters</p>
+          <h2>Be the first lab to use it.</h2>
+          <p>
+            We're approaching the end of the patent process and beginning the next phase:
+            getting the electrode into the hands of researchers who need it.
+          </p>
+          <p>
+            If you run an EEG lab and have experienced the frustrations of recording from
+            participants with curly or afro-textured hair, we want to work with you.
+            Early adopters will shape the final product and get priority access when
+            we're ready to ship.
+          </p>
+          <ul class="adopters-list">
+            <li>Priority access to the first production run</li>
+            <li>Direct input into final design decisions</li>
+            <li>Co-authorship opportunities on validation studies</li>
+            <li>Early adopter pricing</li>
+          </ul>
+        </div>
+        <div class="adopters-form-wrap">
+          <p class="adopters-form-label">Register your interest</p>
+          <form class="adopters-form" id="adoptersForm">
+            <div class="form-group">
+              <label for="a-name">Name</label>
+              <input type="text" id="a-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="a-email">Email</label>
+              <input type="email" id="a-email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="a-institution">Institution</label>
+              <input type="text" id="a-institution" name="institution" placeholder="University or research centre" required />
+            </div>
+            <div class="form-group">
+              <label for="a-system">EEG system you use</label>
+              <input type="text" id="a-system" name="system" placeholder="e.g. BioSemi, g.tec, Brain Products" />
+            </div>
+            <div class="form-group">
+              <label for="a-context">Research context</label>
+              <textarea id="a-context" name="context" rows="3" placeholder="Briefly describe your EEG research and participant population"></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent btn-full">Register as early adopter</button>
+          </form>
+          <div class="adopters-success" id="adoptersSuccess">
+            <h4>You're on the list.</h4>
+            <p>We'll be in touch as soon as we're ready for early access. Thank you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-alt" id="team">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Team</p>
+        <h2>Built by people who refused<br />to wait for someone else to solve this.</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card team-card-founder">
+          <div class="team-avatar" aria-hidden="true">
+            <div class="avatar-placeholder">MAK</div>
+          </div>
+          <div class="team-info">
+            <h3>Merlin Angel Kelly</h3>
+            <p class="team-role">Co-founder &bull; PhD Researcher</p>
+            <p class="team-bio">Department of EEE &bull; Aspire Create, UCL</p>
+          </div>
+        </div>
+        <div class="team-card team-card-founder">
+          <div class="team-avatar" aria-hidden="true">
+            <div class="avatar-placeholder">PB</div>
+          </div>
+          <div class="team-info">
+            <h3>Peter Bryan</h3>
+            <p class="team-role">Co-founder &bull; PhD Researcher</p>
+            <p class="team-bio">Imperial College London</p>
+          </div>
+        </div>
+        <div class="team-card team-card-founder">
+          <div class="team-avatar" aria-hidden="true">
+            <div class="avatar-placeholder">RP</div>
+          </div>
+          <div class="team-info">
+            <h3>Rishan Patel</h3>
+            <p class="team-role">Co-founder &bull; PhD Researcher</p>
+            <p class="team-bio">Aspire Create, UCL</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" aria-hidden="true">
+            <div class="avatar-placeholder">LK</div>
+          </div>
+          <div class="team-info">
+            <h3>Lexi Kier</h3>
+            <p class="team-role">Research Collaborator</p>
+            <p class="team-bio">
+              Department of Kinesiology, University of North Carolina at Greensboro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-text">
+          <p class="eyebrow eyebrow-light">Get in Touch</p>
+          <h2>If you work in EEG,<br />neurotechnology, or impact<br />investing, we want to<br />hear from you.</h2>
+          <p>
+            We're actively seeking research partnerships with labs conducting EEG studies,
+            conversations with neurotechnology companies, and connections with investors
+            who care about equitable hardware.
+          </p>
+          <p>
+            The patent process is underway. The next phase of development is being planned.
+            The problem is real, documented, and solvable. If you want to be part of that,
+            reach out.
+          </p>
+        </div>
+        <div class="contact-email-wrap">
+          <p class="contact-email-intro">Drop us an email and we'll get back to you.</p>
+          <ul class="contact-email-list">
+            <li><a href="mailto:uceerjp@ucl.ac.uk">uceerjp@ucl.ac.uk</a></li>
+            <li><a href="mailto:peter.bryan21@imperial.ac.uk">peter.bryan21@imperial.ac.uk</a></li>
+            <li><a href="mailto:michael-merlin.kelly.22@ucl.ac.uk">michael-merlin.kelly.22@ucl.ac.uk</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Synaptive</span>
+        <p>Building the electrode that should have existed from the beginning.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#problem">The Problem</a>
+        <a href="#solution">Our Work</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-note">
+        &copy; 2024 Synaptive. Patent pending.
+        <br />Aspire Create, University College London.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
