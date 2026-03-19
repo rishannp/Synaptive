@@ -69,22 +69,6 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// ── Early adopters form ───────────────────────────────────────
-const adoptersForm = document.getElementById('adoptersForm');
-const adoptersSuccess = document.getElementById('adoptersSuccess');
-
-adoptersForm?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = adoptersForm.querySelector('button[type="submit"]');
-  btn.textContent = 'Registering…';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    adoptersForm.style.display = 'none';
-    adoptersSuccess.style.display = 'block';
-  }, 900);
-});
-
 // ── Smooth scroll polyfill for older Safari ──────────────────
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
