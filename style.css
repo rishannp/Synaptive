@@ -548,6 +548,20 @@ blockquote cite {
   background: var(--accent);
   box-shadow: 0 0 0 4px var(--accent-glow);
 }
+.timeline-dot.future {
+  border-color: rgba(249,247,244,0.12);
+  background: transparent;
+  border-style: dashed;
+}
+.timeline-item-future .timeline-content h4 {
+  color: rgba(249,247,244,0.45);
+}
+.timeline-item-future .timeline-content p {
+  color: rgba(249,247,244,0.3);
+}
+.timeline-item-future {
+  opacity: 0.85;
+}
 .timeline-content h4 {
   font-size: 1rem;
   font-weight: 700;
