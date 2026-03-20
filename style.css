@@ -860,6 +860,91 @@ blockquote cite {
   margin-bottom: 1rem;
 }
 
+/* ── Shared form base ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  box-sizing: border-box;
+}
+.form-group textarea { resize: vertical; }
+.form-success {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3a9e6e;
+}
+.form-error {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #c0392b;
+}
+
+/* ── Adopters form (light bg) ── */
+.adopters-form .form-group label { color: var(--text-muted); }
+.adopters-form .form-group input,
+.adopters-form .form-group textarea {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  color: var(--text);
+}
+.adopters-form .form-group input:focus,
+.adopters-form .form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+.adopters-form .form-group input::placeholder,
+.adopters-form .form-group textarea::placeholder { color: #aaa; }
+
+/* ── Contact form (dark bg) ── */
+.contact-form-wrap { width: 100%; }
+.contact-form .form-group label { color: var(--text-light2); }
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(255,255,255,0.12);
+  color: var(--text-light);
+}
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder { color: rgba(249,247,244,0.3); }
+.contact-form .form-success { color: #5dcd9b; }
+.contact-form .form-error   { color: #ff7b7b; }
+
+/* Light outline button variant for dark section */
+.btn-outline-light {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color: var(--text-light);
+}
+.btn-outline-light:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.5);
+  transform: translateY(-1px);
+}
+
 .contact-email-wrap {
   display: flex;
   flex-direction: column;

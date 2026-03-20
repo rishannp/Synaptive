@@ -799,12 +799,32 @@
         </div>
         <div class="adopters-form-wrap">
           <p class="adopters-form-label">Register your interest</p>
-          <p class="adopters-email-note">Sign-up isn't working just yet &mdash; for now, please email one of us directly and we'll add you to the list.</p>
-          <ul class="contact-email-list">
-            <li><a href="mailto:uceerjp@ucl.ac.uk">uceerjp@ucl.ac.uk</a></li>
-            <li><a href="mailto:peter.bryan21@imperial.ac.uk">peter.bryan21@imperial.ac.uk</a></li>
-            <li><a href="mailto:michael-merlin.kelly.22@ucl.ac.uk">michael-merlin.kelly.22@ucl.ac.uk</a></li>
-          </ul>
+          <form id="adoptersForm" class="adopters-form">
+            <input type="hidden" name="_subject" value="Early Adopter Sign-up — Synaptive">
+            <div class="form-group">
+              <label for="adopter-name">Name</label>
+              <input type="text" id="adopter-name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="adopter-email">Email</label>
+              <input type="email" id="adopter-email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="adopter-institution">Institution</label>
+              <input type="text" id="adopter-institution" name="institution" placeholder="University or organisation">
+            </div>
+            <div class="form-group">
+              <label for="adopter-system">EEG system you use</label>
+              <input type="text" id="adopter-system" name="eeg_system" placeholder="e.g. BrainProducts, g.tec, ANT Neuro">
+            </div>
+            <div class="form-group">
+              <label for="adopter-context">What are you researching?</label>
+              <textarea id="adopter-context" name="research_context" rows="3" placeholder="Brief description of your research"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign me up</button>
+            <p class="form-success" id="adopters-success" hidden>Thanks! We'll be in touch soon.</p>
+            <p class="form-error" id="adopters-error" hidden>Something went wrong &mdash; please email us directly.</p>
+          </form>
         </div>
       </div>
     </div>
@@ -855,9 +875,7 @@
           <div class="team-info">
             <h3>Lexi Kier</h3>
             <p class="team-role">Research Collaborator</p>
-            <p class="team-bio">
-              Department of Kinesiology, University of North Carolina at Greensboro.
-            </p>
+            <p class="team-bio">Research Collaborator</p>
           </div>
         </div>
       </div>
@@ -882,13 +900,29 @@
             reach out.
           </p>
         </div>
-        <div class="contact-email-wrap">
-          <p class="contact-email-intro">Drop us an email and we'll get back to you.</p>
-          <ul class="contact-email-list">
-            <li><a href="mailto:uceerjp@ucl.ac.uk">uceerjp@ucl.ac.uk</a></li>
-            <li><a href="mailto:peter.bryan21@imperial.ac.uk">peter.bryan21@imperial.ac.uk</a></li>
-            <li><a href="mailto:michael-merlin.kelly.22@ucl.ac.uk">michael-merlin.kelly.22@ucl.ac.uk</a></li>
-          </ul>
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="contact-form">
+            <input type="hidden" name="_subject" value="Synaptive Website Enquiry">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-org">Organisation</label>
+              <input type="text" id="contact-org" name="organisation" placeholder="Your institution or company">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us about yourself and how you'd like to connect..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-light">Send message</button>
+            <p class="form-success" id="contact-success" hidden>Message sent! We'll get back to you soon.</p>
+            <p class="form-error" id="contact-error" hidden>Something went wrong &mdash; please email us directly.</p>
+          </form>
         </div>
       </div>
     </div>

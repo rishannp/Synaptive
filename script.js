@@ -81,6 +81,50 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// ── Formspree form submission ──────────────────────────────────
+const FORMSPREE_URL = 'https://formspree.io/f/xeerdlle';
+
+async function submitToFormspree(form, successId, errorId) {
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+
+  const data = {};
+  new FormData(form).forEach((val, key) => { data[key] = val; });
+
+  try {
+    const res = await fetch(FORMSPREE_URL, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (res.ok) {
+      form.reset();
+      document.getElementById(successId).hidden = false;
+      btn.textContent = 'Sent!';
+    } else {
+      document.getElementById(errorId).hidden = false;
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  } catch {
+    document.getElementById(errorId).hidden = false;
+    btn.disabled = false;
+    btn.textContent = originalText;
+  }
+}
+
+document.getElementById('adoptersForm')?.addEventListener('submit', e => {
+  e.preventDefault();
+  submitToFormspree(e.target, 'adopters-success', 'adopters-error');
+});
+
+document.getElementById('contactForm')?.addEventListener('submit', e => {
+  e.preventDefault();
+  submitToFormspree(e.target, 'contact-success', 'contact-error');
+});
+
 // ── Voices tab switching ───────────────────────────────────────
 const voicesTabs   = document.querySelectorAll('.voices-tab');
 const voicesPanels = document.querySelectorAll('.voices-panel');
