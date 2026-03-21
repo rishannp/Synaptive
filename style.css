@@ -1248,6 +1248,98 @@ blockquote cite {
 }
 
 /* ============================================================
+   FURTHER READING / EVIDENCE BASE
+   ============================================================ */
+.refs-narrative {
+  max-width: 780px;
+  margin: 0 auto 3rem;
+}
+.refs-narrative p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Survey callout */
+.survey-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--accent-dim);
+  border: 1px solid rgba(203,142,126,0.25);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 3.5rem;
+}
+.survey-callout-text h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.survey-callout-text p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 540px;
+}
+.survey-callout .btn {
+  flex-shrink: 0;
+}
+
+/* Reference groups grid */
+.refs-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+.refs-group-wide {
+  grid-column: span 2;
+}
+.refs-group-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.refs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem 2rem;
+}
+.ref-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.ref-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+  line-height: 1.4;
+}
+.ref-link:hover { color: var(--accent); }
+.ref-link-plain {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+.ref-desc {
+  display: none;
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width: 960px) {
@@ -1272,6 +1364,10 @@ blockquote cite {
     grid-column: span 2;
     flex-direction: column;
   }
+
+  .refs-groups { grid-template-columns: 1fr; }
+  .refs-group-wide { grid-column: span 1; }
+  .survey-callout { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 640px) {
