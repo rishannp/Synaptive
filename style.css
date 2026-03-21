@@ -1251,8 +1251,7 @@ blockquote cite {
    FURTHER READING / EVIDENCE BASE
    ============================================================ */
 .refs-narrative {
-  max-width: 780px;
-  margin: 0 auto 3rem;
+  margin: 0 0 3rem;
 }
 .refs-narrative p {
   font-size: 1rem;
