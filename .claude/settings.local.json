@@ -11,7 +11,9 @@
       "Bash(where php:*)",
       "Bash(where caddy:*)",
       "Bash(NODE=\"/c/Users/uceerjp/AppData/Local/Autodesk/webdeploy/production/c20471a4ae316e18725b0917d95e36d14575877a/NODEJS/node.exe\")",
-      "Bash(\"$NODE\" --version)"
+      "Bash(\"$NODE\" --version)",
+      "Read(//c/Users/uceerjp/Downloads/**)",
+      "Bash(cp \"C:/Users/uceerjp/Downloads/og-image.png\" \"C:/Users/uceerjp/Desktop/Synaptive/website/og-image.png\")"
     ]
   }
 }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; background: #0D0D0D; }
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 100px;
+    position: relative;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: #cb8e7e;
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #cb8e7e;
+    margin-bottom: 28px;
+  }
+  .headline {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    color: #F9F7F4;
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+  .headline em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #cb8e7e;
+  }
+  .brand {
+    position: absolute;
+    bottom: 52px;
+    left: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #F9F7F4;
+    letter-spacing: -0.02em;
+  }
+  .brand span {
+    color: #cb8e7e;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+  }
+  .dot-grid {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 280px;
+    background-image: radial-gradient(circle, rgba(203,142,126,0.3) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
+    opacity: 0.5;
+  }
+  .glow {
+    position: absolute;
+    right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(203,142,126,0.25) 0%, transparent 70%);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="dot-grid"></div>
+    <div class="glow"></div>
+    <p class="eyebrow">Synaptive &bull; Equitable Electrodes</p>
+    <h1 class="headline">
+      EEG was built for<br>
+      <em>one type of hair.</em><br>
+      We&rsquo;re fixing that.
+    </h1>
+    <div class="brand">Synaptive</div>
+  </div>
+</body>
+</html>
