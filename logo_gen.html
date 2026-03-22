@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1000px; height: 1000px; background: #0D0D0D; }
+
+  .canvas {
+    width: 1000px;
+    height: 1000px;
+    background: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Decorative rings — same as website hero */
+  .ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(203, 142, 126, 0.18);
+    pointer-events: none;
+  }
+  .ring-1 { width: 620px; height: 620px; background: rgba(203,142,126,0.04); }
+  .ring-2 { width: 430px; height: 430px; background: rgba(203,142,126,0.06); }
+  .ring-3 { width: 240px; height: 240px; background: rgba(203,142,126,0.09); }
+
+  .wordmark {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .wordmark span {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 108px;
+    letter-spacing: -3px;
+    color: #F9F7F4;
+    display: block;
+    line-height: 1;
+  }
+
+  .accent-bar {
+    width: 48px;
+    height: 4px;
+    background: #CB8E7E;
+    border-radius: 2px;
+    margin: 22px auto 0;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+    <div class="wordmark">
+      <span>Synaptive</span>
+      <div class="accent-bar"></div>
+    </div>
+  </div>
+</body>
+</html>
