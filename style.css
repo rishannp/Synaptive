@@ -334,6 +334,57 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 }
 
 /* ============================================================
+   PROGRAMMES CAROUSEL
+   ============================================================ */
+.programmes-section {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.programmes-label {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.75rem;
+}
+.programmes-track-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.programmes-track {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: max-content;
+  animation: scroll-logos 28s linear infinite;
+}
+.programmes-track:hover {
+  animation-play-state: paused;
+}
+.programme-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: filter 0.25s, opacity 0.25s;
+  flex-shrink: 0;
+}
+.programme-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+@keyframes scroll-logos {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ============================================================
    STATS BAND
    ============================================================ */
 .stats-band {
