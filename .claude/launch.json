@@ -4,7 +4,7 @@
     {
       "name": "synaptive",
       "runtimeExecutable": "C:/Users/uceerjp/AppData/Local/Autodesk/webdeploy/production/c20471a4ae316e18725b0917d95e36d14575877a/NODEJS/node.exe",
-      "runtimeArgs": ["-e", "require('http').createServer((req,res)=>{const fs=require('fs'),path=require('path');let f=path.join('C:/Users/uceerjp/Desktop/Synaptive/website',req.url==='/'?'index.html':req.url);const ext=path.extname(f);const mime={'html':'text/html','css':'text/css','js':'application/javascript','png':'image/png','jpg':'image/jpeg','jpeg':'image/jpeg','svg':'image/svg+xml','ico':'image/x-icon','webp':'image/webp'};fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end();}else{res.writeHead(200,{'Content-Type':mime[ext.slice(1)]||'text/plain'});res.end(d);}});}).listen(3000,()=>console.log('ok'))"],
+      "runtimeArgs": ["-e", "require('http').createServer((req,res)=>{const fs=require('fs'),path=require('path');let u=req.url.split('?')[0];let f=path.join('C:/Users/uceerjp/Desktop/Synaptive/website',u==='/'?'index.html':u);const ext=path.extname(f);const mime={'html':'text/html','css':'text/css','js':'application/javascript','glb':'model/gltf-binary','gltf':'model/gltf+json','png':'image/png','jpg':'image/jpeg','jpeg':'image/jpeg','svg':'image/svg+xml','ico':'image/x-icon','webp':'image/webp'};fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end();}else{res.writeHead(200,{'Content-Type':mime[ext.slice(1)]||'text/plain'});res.end(d);}});}).listen(3000,()=>console.log('ok'))"],
       "port": 3000
     }
   ]

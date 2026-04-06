@@ -73,7 +73,19 @@
       <div class="hero-ring ring-2"></div>
       <div class="hero-ring ring-3"></div>
       <div class="hero-dot-grid"></div>
+      <div class="electrode-wrap">
+        <model-viewer
+          id="electrode-viewer"
+          src="electrode.glb"
+          camera-orbit="0deg 90deg 110%"
+          interpolation-decay="0"
+          shadow-intensity="0"
+          exposure="1.4"
+          tone-mapping="commerce">
+        </model-viewer>
+      </div>
     </div>
+    <p class="electrode-disclaimer">For illustrative purposes only</p>
   </section>
 
   <!-- STATS BAND -->
@@ -828,98 +840,84 @@
             <div class="voices-card-header"><span class="voices-area">Natural Hair EEG</span><span class="voices-system">Natural hair</span></div>
             <blockquote class="voices-quote">Really? I've had an EEG with natural hair and wasn't ever told to wash my hair with conditioner. Hmm.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Preparation instructions vary wildly between institutions — no standardised approach exists</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">Epilepsy (long-term patient)</span><span class="voices-system">Thick natural hair</span></div>
             <blockquote class="voices-quote">9/10 techs have been very appreciative. Few may say something slick and I either ignore it or suggest they send another tech... Getting the glue out on long multi-day recordings can be a headache but I've found great tools and inexpensive products I keep on hand.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Inconsistent tech sensitivity; gel removal from multi-day recordings extremely burdensome — patients must self-research solutions</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">Diagnostic EEG</span><span class="voices-system">3A Curls</span></div>
             <blockquote class="voices-quote">I washed it the night before, didn't use product, and then blew it dry. It frizzed up really bad but it was going to get messy anyway because of the glue. Afterwards I used warm olive oil to get the glue out of my hair.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Significant preparation and post-procedure hair treatment required; patients must develop their own cleanup protocols</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Patient</span><span class="voices-system">4b Hair</span></div>
             <blockquote class="voices-quote">I'd recommend moisturizing your hair a day before if it's going to be longer than a day. The glue will be hard to take out the more curly or kinky your hair is and you'll probably need a lubricant to get it out.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Glue removal significantly harder for kinky and coily hair types; requires pre-planned aftercare the clinic does not provide</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Patient</span><span class="voices-system">3A/B Curls, hip length</span></div>
             <blockquote class="voices-quote">My EEG techs didn't try any combing or brushing after I told them not to... my hair was honestly pretty matted at the bottom. Areas with a larger percentage of PoC have better trained staff through experience.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Hair matting and damage; quality of experience is a geographic lottery dependent on clinic demographics</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Patient</span><span class="voices-system">Natural hair</span></div>
             <blockquote class="voices-quote">I've been lucky a couple of times and had someone nice enough to braid my hair when they put the electrodes on. I will definitely ask them to in the future. It's a game changer.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Positive outcomes depend entirely on individual tech's willingness to adapt; patients must know to advocate for themselves</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">24hr EEG</span><span class="voices-system">4C Hair, flat twists</span></div>
             <blockquote class="voices-quote">I will warn you, it was a nightmare to take the glue out. I let the oil set for a day and then had to get all the glue crumbs out with a fine tooth comb. It was hell.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Extreme difficulty and distress removing electrode glue from protective hairstyles post-procedure</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">Diagnostic EEG (seizure rule-out)</span><span class="voices-system">Very curly hair</span></div>
             <blockquote class="voices-quote">I'm not washing my hair and then not putting conditioner on it like it says. Do I just cancel the test? This test will ultimately show nothing and be a waste of time on top of not being inclusive for people of color with these hair requirements.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Preparation instructions feel violating; patient considering forgoing necessary medical testing rather than comply</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">72hr EEG (complex focal seizures)</span><span class="voices-system">4C Hair, cornrows</span></div>
             <blockquote class="voices-quote">I am covered in glue. My hair was in cornrows and they used so much glue to keep the leads on. I've read so many things online but they apply to hair that's quite thin. I've lost some curls already.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Excessive glue application; no publicly available aftercare guidance for thick or coily hair; permanent curl damage</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">72hr EEG (follow-up update)</span><span class="voices-system">4C Hair, cornrows</span></div>
             <blockquote class="voices-quote">I got one of my partners started on acetone. We're 30% complete. There is so much damn glue. I can't stand up to shower or wash my hair. I'm a fall risk.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Using harsh chemicals while physically unwell; safety risk compounded by an inaccessible cleanup process</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">72hr EEG (final update)</span><span class="voices-system">4C Hair, cornrows</span></div>
             <blockquote class="voices-quote">Acetone will eat glue but it will also eat your hair and your skin. Chemical burns suck. Hair oil was the best — it got the glue out best and didn't leave me with work later.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Patients resort to potentially harmful chemicals; no hair-type-specific aftercare guidance provided by clinical teams</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">Paediatric EEG (parent)</span><span class="voices-system">22-month-old, thick hair</span></div>
             <blockquote class="voices-quote">Got a 22mo old with A TON of glue in his head because they had to reapply while he was in hospital. I can't cut it because it's stuck to his scalp.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Glue adhered directly to infant's scalp after repeated electrode application; no safe removal method available</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">Brain Mapping (two failed attempts)</span><span class="voices-system">4B Hair, shoulder length</span></div>
             <blockquote class="voices-quote">Both exams were not able to produce clear results. The docs want to try the testing again and this time I'm refusing. I am missing out on medical information simply due to my hair texture and a lack of equipment prepared for it.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Failed medical testing and potential misdiagnosis risk; contradictory prep instructions; patient refusing further attempts</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">Nurse (patient advocate)</span><span class="voices-system">Clinical context</span></div>
             <blockquote class="voices-quote">I am a nurse and my advice is to call the EEG department and ask to speak to an EEG tech. They will be able to tell you exactly what's workable. The instructions are often overkill.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Challenge</span><span class="voices-impact-text">Standard written instructions are overly restrictive; direct communication with techs reveals more flexible options — but patients shouldn't need to know this</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
         </div>
@@ -933,49 +931,42 @@
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">12 years experience</span></div>
             <blockquote class="voices-quote">I usually prep a little longer than usual, and scrub the scalp in a cross or X pattern, starting from the middle. This just helps to move the hair out of the way more, especially for curly hair. I'll usually just tell patients that depending on signal quality, I'll have to reprep multiple times.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">Effective approach relies entirely on accumulated personal experience; no standardised protocol exists or is shared across the field</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">12 years experience</span></div>
             <blockquote class="voices-quote">It is prevalent. But part of our job is learning to adapt to different situations. As for electrodes, they're already universal. In the clinical side, not research, we use the disc or cup electrodes. It's the industry standard. Can't get more universal than that.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">Views existing disc/cup electrodes as already sufficient; relies on individual adaptation rather than design improvement</span></div>
-            <span class="voices-solution solution-no">No solution needed</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">12 years experience</span></div>
             <blockquote class="voices-quote">There's too many things that are still done now because that's the way it's always been done. Hopefully in the next 10 years we get a shift in mentality once those techs leave the field.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">Acknowledges deep-rooted field inertia; recognises generational change is needed, not just new tools — but the timeline is a decade away</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card voices-card-highlight">
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">Many years experience</span></div>
             <blockquote class="voices-quote">I use a metal comb to part the hair as I measure and make little hair poofs all over the patient's head in the grid pattern. I've applied 72-hour ambulatory EEGs using this method and all the electrodes have stayed and the quality has remained very high.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">Highly effective technique developed independently over years; not formally taught; completely inaccessible to less experienced techs</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">r/clinicalEEG</span></div>
             <blockquote class="voices-quote">There's no specific technique. Just take your time and part the hair. Data quality only suffers if the technologist doesn't apply the electrodes appropriately. Our target is the scalp.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">Views the issue as a technique problem only; quality outcomes depend entirely on individual patience and skill</span></div>
-            <span class="voices-solution solution-no">No solution needed</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">r/clinicalEEG</span></div>
             <blockquote class="voices-quote">I've found using long tipped q-tips helps with the parting of the hair while you're measuring and applying. If your lab has hair stylist parting clips those will also help.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">No standard tools exist for this; techs improvise with items not designed for EEG — hair stylist clips, long q-tips</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
           <div class="voices-card">
             <div class="voices-card-header"><span class="voices-area">EEG Technician</span><span class="voices-system">16 years experience</span></div>
             <blockquote class="voices-quote">There is no proven best method for applying to thick, curly or natural hair. It just takes time and patience. Each head will be different and so will the method you choose to use.</blockquote>
             <div class="voices-impact-row"><span class="voices-impact-label">Observation</span><span class="voices-impact-text">After 16 years, no evidence-based standardised method exists; every patient with thick or curly hair is a new improvisation</span></div>
-            <span class="voices-solution solution-yes">Solution would help</span>
           </div>
 
         </div>
@@ -1051,8 +1042,8 @@
       </div>
       <div class="team-grid">
         <div class="team-card team-card-founder">
-          <div class="team-avatar" aria-hidden="true">
-            <div class="avatar-placeholder">MAK</div>
+          <div class="team-avatar">
+            <img src="merlin.png" alt="Merlin Angel Kelly" class="avatar-photo" />
           </div>
           <div class="team-info">
             <h3>Merlin Angel Kelly</h3>
@@ -1061,8 +1052,8 @@
           </div>
         </div>
         <div class="team-card team-card-founder">
-          <div class="team-avatar" aria-hidden="true">
-            <div class="avatar-placeholder">PB</div>
+          <div class="team-avatar">
+            <img src="peter.png" alt="Peter Bryan" class="avatar-photo" />
           </div>
           <div class="team-info">
             <h3>Peter Bryan</h3>
@@ -1071,8 +1062,8 @@
           </div>
         </div>
         <div class="team-card team-card-founder">
-          <div class="team-avatar" aria-hidden="true">
-            <div class="avatar-placeholder">RP</div>
+          <div class="team-avatar">
+            <img src="rishan.jpeg" alt="Rishan Patel" class="avatar-photo" />
           </div>
           <div class="team-info">
             <h3>Rishan Patel</h3>
@@ -1162,5 +1153,23 @@
   </footer>
 
   <script src="script.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script>
+    document.getElementById('electrode-viewer').addEventListener('load', function () {
+      var mv = this;
+      mv.model.materials.forEach(function (mat) {
+        mat.pbrMetallicRoughness.setBaseColorFactor([0.02, 0.02, 0.02, 1.0]);
+        mat.pbrMetallicRoughness.setMetallicFactor(1.0);
+        mat.pbrMetallicRoughness.setRoughnessFactor(0.12);
+      });
+      var theta = 0;
+      function animateOrbit() {
+        theta = (theta + 0.25) % 360;
+        mv.cameraOrbit = theta + 'deg 90deg 110%';
+        requestAnimationFrame(animateOrbit);
+      }
+      animateOrbit();
+    });
+  </script>
 </body>
 </html>
