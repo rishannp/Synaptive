@@ -1073,6 +1073,15 @@ blockquote cite {
   color: var(--text-muted);
 }
 
+/* Advisors */
+.advisors-panel .team-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.advisor-placeholder {
+  border-style: dashed;
+  opacity: 0.5;
+}
+
 /* ============================================================
    CONTACT
    ============================================================ */
